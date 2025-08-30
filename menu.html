@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <section class="nav">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="image/logo.png" alt="Company Logo">
+        </div>
+        <div class="nav-links">
+            <ul class="links" id="menuList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+            <button class="nav-btn" type="button">Register now</button>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+    </script>
+</body>
+</html>
